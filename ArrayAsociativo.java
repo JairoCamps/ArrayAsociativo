@@ -51,5 +51,10 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public String get(String clave){
+		
+		return "";
+	}
+	
 	
 }

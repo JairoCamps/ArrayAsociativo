@@ -2,9 +2,12 @@ package arrayAsociativo;
 
 import static org.junit.Assert.*;
 
+import java.util.NoSuchElementException;
 import java.util.Random;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 
 
@@ -47,6 +50,13 @@ public class TestArrayAsociativo {
 		}
 		ArrayAsociativo array = new ArrayAsociativo (keys, values);
 		assertTrue (array.size() == num);
+	}
+	
+	
+	@Test (expected = NoSuchElementException.class)
+	public void testBuscarClaveVacio(){
+		ArrayAsociativo aVacio = new ArrayAsociativo();
+		aVacio.get("clave1");
 	}
 
 }
