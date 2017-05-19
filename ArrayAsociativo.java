@@ -119,5 +119,9 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public boolean containsKey(String clave){
+		return true;
+	}
+	
 	
 }

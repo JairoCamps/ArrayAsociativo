@@ -122,6 +122,12 @@ public class TestArrayAsociativo {
 		assertTrue (array.getOrElse("clave4", "hola") == "hola");
 	}
 	
+	@Test
+	public void testContainsKeyVacio(){
+		ArrayAsociativo array = new ArrayAsociativo ();
+		assertTrue (array.containsKey("clave1") == false);
+	}
+	
 	
 	
 	
