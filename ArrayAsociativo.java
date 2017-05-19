@@ -98,7 +98,11 @@ public class ArrayAsociativo {
 	}
 	
 	public String getOrElse(String clave, String valorPorDefecto){
-		return "";
+		if (primero == null){
+			return valorPorDefecto;
+		}else{
+			return "";
+		}
 	}
 	
 	
