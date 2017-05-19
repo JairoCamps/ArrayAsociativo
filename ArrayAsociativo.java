@@ -134,7 +134,7 @@ public class ArrayAsociativo {
 			if (!encontrado){
 				return false;
 			}else{
-				return false;
+				return true;
 			}
 		}
 	}
