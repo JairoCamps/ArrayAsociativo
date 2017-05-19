@@ -78,6 +78,9 @@ public class ArrayAsociativo {
 		if (primero == null){
 			Nodo nodo = new Nodo (clave, valor, null);
 			primero = nodo;
+		}else{
+			Nodo nodo = new Nodo (clave, valor, primero);
+			primero = nodo;
 		}
 	}
 	
