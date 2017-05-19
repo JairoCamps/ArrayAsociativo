@@ -79,8 +79,18 @@ public class ArrayAsociativo {
 			Nodo nodo = new Nodo (clave, valor, null);
 			primero = nodo;
 		}else{
-			Nodo nodo = new Nodo (clave, valor, primero);
-			primero = nodo;
+			boolean encontrado = false;
+			Nodo act = primero;
+			while (act != null && !encontrado){
+				if (act.clave.equals(clave)){
+					encontrado = true;
+				}
+				act = act.sig;
+			}
+			if (!encontrado){
+				Nodo nodo = new Nodo (clave, valor, primero);
+				primero = nodo;
+			}
 		}
 	}
 	
