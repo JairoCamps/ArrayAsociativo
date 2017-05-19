@@ -66,5 +66,13 @@ public class TestArrayAsociativo {
 		ArrayAsociativo array = new ArrayAsociativo (keys, values);
 		assertTrue (array.get("clave2") == "valor2");
 	}
+	
+	@Test(expected = NoSuchElementException.class)
+	public void testBuscarClaveNoExistente(){
+		String[] keys = {"clave1", "clave2", "clave3"};
+		String[] values ={"valor1", "valor2", "valor3"};
+		ArrayAsociativo array = new ArrayAsociativo (keys, values);
+		array.get("clave2");
+	}
 
 }
