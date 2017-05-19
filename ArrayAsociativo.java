@@ -97,5 +97,9 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public String getOrElse(String clave, String valorPorDefecto){
+		return "";
+	}
+	
 	
 }

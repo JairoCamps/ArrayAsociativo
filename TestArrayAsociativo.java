@@ -99,6 +99,12 @@ public class TestArrayAsociativo {
 		array.put("clave3", "nuevo3");
 		assertTrue (array.get("clave3") == "nuevo3");
 	}
+	
+	@Test
+	public void testGetOrElseVacio(){
+		ArrayAsociativo array = new ArrayAsociativo ();
+		assertTrue (array.getOrElse("clave1", "hola") == "hola");
+	}
 
 	
 	
