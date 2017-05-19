@@ -106,7 +106,13 @@ public class TestArrayAsociativo {
 		assertTrue (array.getOrElse("clave1", "hola") == "hola");
 	}
 
-	
+	@Test
+	public void testGetOrElseExiste(){
+		String[] keys = {"clave1", "clave2", "clave3"};
+		String[] values ={"valor1", "valor2", "valor3"};
+		ArrayAsociativo array = new ArrayAsociativo (keys, values);
+		assertTrue (array.getOrElse("clave3", "hola") == "valor3");
+	}
 	
 	
 	
