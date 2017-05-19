@@ -66,7 +66,11 @@ public class ArrayAsociativo {
 				}
 				act = act.sig;
 			}
-			return valor;
+			if (valor == null){
+				throw new NoSuchElementException();
+			}else{
+				return valor;
+			}
 		}
 	}
 	
