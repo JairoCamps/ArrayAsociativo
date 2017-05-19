@@ -143,7 +143,24 @@ public class ArrayAsociativo {
 		if (primero == null){
 			return false;
 		}else{
-			return false;
+			boolean encontrado = false;
+			Nodo act = primero;
+			Nodo ant = null;
+			while (act != null && !act.clave.equals(clave)){
+				ant = act;
+				act = act.sig;
+			}
+			if (!act.clave.equals(clave)){
+				return true;
+			}else{
+				if (ant == null){
+					primero = act.sig;
+					return true;
+				}else{
+					ant.sig = act.sig;
+					return true;
+				}
+			}
 		}
 	}
 
