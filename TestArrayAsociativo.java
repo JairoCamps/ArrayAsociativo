@@ -58,5 +58,13 @@ public class TestArrayAsociativo {
 		ArrayAsociativo aVacio = new ArrayAsociativo();
 		aVacio.get("clave1");
 	}
+	
+	@Test
+	public void testBuscarClaveExistente(){
+		String[] keys = {"clave1", "clave2", "clave3"};
+		String[] values ={"valor1", "valor 2", "valor3"};
+		ArrayAsociativo array = new ArrayAsociativo (keys, values);
+		assertTrue (array.get("clave2") == "valor2");
+	}
 
 }
