@@ -112,7 +112,7 @@ public class ArrayAsociativo {
 			}
 			if (!encontrado){
 				
-				return "";
+				return valorPorDefecto;
 			}else{
 				return act.valor;
 			}
