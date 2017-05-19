@@ -139,5 +139,9 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public boolean remove(String clave){
+		return true;
+	}
+	
 	
 }

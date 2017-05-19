@@ -144,6 +144,12 @@ public class TestArrayAsociativo {
 		assertTrue (array.containsKey("clave3"));
 	}
 	
+	@Test
+	public void testBorrarVacio(){
+		ArrayAsociativo array = new ArrayAsociativo ();
+		assertTrue (array.remove("clave1") == false);
+	}
+	
 	
 	
 	
