@@ -158,6 +158,13 @@ public class TestArrayAsociativo {
 		assertTrue (array.remove("clave3"));
 	}
 	
+	@Test
+	public void testBorrarNoContiene(){
+		String[] keys = {"clave1", "clave2", "clave3"};
+		String[] values ={"valor1", "valor2", "valor3"};
+		ArrayAsociativo array = new ArrayAsociativo (keys, values);
+		assertTrue (array.remove("clave4") == false);
+	}
 	
 	
 	
