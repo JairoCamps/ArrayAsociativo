@@ -123,7 +123,19 @@ public class ArrayAsociativo {
 		if (primero == null){
 			return false;
 		}else{
-			return true;
+			boolean encontrado = false;
+			Nodo act = primero;
+			while (act != null && !encontrado){
+				if (act.clave.equals(clave)){
+					encontrado = true;
+				}
+				act = act.sig;
+			}
+			if (!encontrado){
+				return false;
+			}else{
+				return false;
+			}
 		}
 	}
 	
