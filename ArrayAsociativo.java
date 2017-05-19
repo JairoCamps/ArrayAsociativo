@@ -140,7 +140,11 @@ public class ArrayAsociativo {
 	}
 	
 	public boolean remove(String clave){
-		return true;
+		if (primero == null){
+			return false;
+		}else{
+			return true;
+		}
 	}
 	
 	
