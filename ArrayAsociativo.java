@@ -1,5 +1,6 @@
 package arrayAsociativo;
 
+
 public class ArrayAsociativo {
 	//Clases internas
 	private class Nodo{
@@ -40,7 +41,13 @@ public class ArrayAsociativo {
 		if (primero == null){
 			return 0;
 		}else{
-			return 2;
+			Nodo act = primero;
+			int cont = 0;
+			while (act != null){
+				cont++;
+				act = act.sig;
+			}
+			return cont;
 		}
 	}
 	
