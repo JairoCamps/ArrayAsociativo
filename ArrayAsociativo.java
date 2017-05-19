@@ -120,7 +120,11 @@ public class ArrayAsociativo {
 	}
 	
 	public boolean containsKey(String clave){
-		return true;
+		if (primero == null){
+			return false;
+		}else{
+			return true;
+		}
 	}
 	
 	
