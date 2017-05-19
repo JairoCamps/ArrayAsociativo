@@ -75,7 +75,10 @@ public class ArrayAsociativo {
 	}
 	
 	public void put(String clave, String valor){
-		
+		if (primero == null){
+			Nodo nodo = new Nodo (clave, valor, null);
+			primero = nodo;
+		}
 	}
 	
 	
