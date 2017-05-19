@@ -164,19 +164,5 @@ public class TestArrayAsociativo {
 		String[] values ={"valor1", "valor2", "valor3"};
 		ArrayAsociativo array = new ArrayAsociativo (keys, values);
 		assertTrue (array.remove("clave4") == false);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }
