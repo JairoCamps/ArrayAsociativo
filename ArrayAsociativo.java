@@ -1,5 +1,6 @@
 package arrayAsociativo;
 
+import java.util.NoSuchElementException;
 
 public class ArrayAsociativo {
 	//Clases internas
@@ -52,7 +53,11 @@ public class ArrayAsociativo {
 	}
 	
 	public String get(String clave){
-		
+		if (primero == null){
+			throw new NoSuchElementException();
+				
+			
+		}
 		return "";
 	}
 	
