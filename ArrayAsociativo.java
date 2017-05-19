@@ -149,7 +149,7 @@ public class ArrayAsociativo {
 				ant = act;
 				act = act.sig;
 			}
-			if (!act.clave.equals(clave)){
+			if (act == null || !act.clave.equals(clave)){
 				return false;
 			}else{
 				if (ant == null){
