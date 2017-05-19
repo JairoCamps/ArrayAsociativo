@@ -143,9 +143,10 @@ public class ArrayAsociativo {
 		if (primero == null){
 			return false;
 		}else{
-			return true;
+			return false;
 		}
 	}
+
 	
 	
 }
