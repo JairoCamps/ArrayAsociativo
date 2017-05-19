@@ -55,10 +55,19 @@ public class ArrayAsociativo {
 	public String get(String clave){
 		if (primero == null){
 			throw new NoSuchElementException();
-				
-			
+		}else{
+			Nodo act = primero;
+			boolean encontrado = false;
+			String valor = null;
+			while (act != null && !encontrado){
+				if (act.clave.equals(clave)){
+					encontrado = true;
+					valor = act.valor;
+				}
+				act = act.sig;
+			}
+			return valor;
 		}
-		return "";
 	}
 	
 	
