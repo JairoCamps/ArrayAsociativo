@@ -74,5 +74,9 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public void put(String clave, String valor){
+		
+	}
+	
 	
 }

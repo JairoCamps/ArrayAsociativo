@@ -74,5 +74,28 @@ public class TestArrayAsociativo {
 		ArrayAsociativo array = new ArrayAsociativo (keys, values);
 		array.get("clave4");
 	}
+	
+	@Test
+	public void testInsertarEnArrayVacio(){
+		ArrayAsociativo array = new ArrayAsociativo ();
+		array.put("clave1", "valor1");
+		assertTrue (array.get("clave1") == "valor1");
+	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
