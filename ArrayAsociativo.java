@@ -101,7 +101,21 @@ public class ArrayAsociativo {
 		if (primero == null){
 			return valorPorDefecto;
 		}else{
-			return "";
+			boolean encontrado = false;
+			Nodo act = primero;
+			while (act != null && !encontrado){
+				if (act.clave.equals(clave)){
+					encontrado = true;
+					break;
+				}
+				act = act.sig;
+			}
+			if (!encontrado){
+				
+				return "";
+			}else{
+				return act.valor;
+			}
 		}
 	}
 	
